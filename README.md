@@ -58,6 +58,25 @@ Rather than moving directly from a problem to a large-scale solution, TLA makes 
 
 TLA is the general architecture.
 
+```mermaid
+flowchart TB
+    P[Territorial problem] --> T[TLA orchestration]
+
+    H[Human and institutional governance] --> T
+    A[AI and knowledge layer] --> T
+
+    T --> L[LTAA<br/>Learning and experimentation]
+    T --> M[MIN<br/>Distributed expertise and micro-missions]
+
+    M --> L
+    L --> C[Capability memory<br/>Provenance, outcomes, reusable assets]
+    C --> T
+
+    L --> R[Reproducible solution]
+    R --> V[Territorial value]
+    V -. feedback and new problems .-> P
+```
+
 Its initial implementation framework includes two complementary mechanisms:
 
 - **LTAA** — the operational learning and experimentation mechanism;
@@ -66,6 +85,19 @@ Its initial implementation framework includes two complementary mechanisms:
 Artificial intelligence provides retrieval, synthesis, hypothesis generation, modelling, simulation, monitoring and coordination capabilities.
 
 Human institutions retain responsibility for objectives, public values, acceptable risk and legitimate decision-making.
+
+Detailed architecture: [architecture/tla-overview.md](architecture/tla-overview.md)
+
+## Repository map
+
+- [Architecture](architecture/tla-overview.md)
+- [Core design principles](framework/core-principles.md)
+- [Decision provenance](framework/decision-provenance.md)
+- [Evaluation framework](evaluation/evaluation-framework.md)
+- [Illustrative Martinique blue-economy case](examples/martinique-blue-economy.md)
+- [Research paper workspace](paper/README.md)
+- [Contribution guidelines](CONTRIBUTING.md)
+- [Pre-publication checklist](RELEASE_CHECKLIST.md)
 
 ## Initial design context
 
