@@ -20,7 +20,7 @@ This file is a working bibliography for the first TLA research paper. It contain
 
 9. Ostrom, E. (2010). Beyond Markets and States: Polycentric Governance of Complex Economic Systems. *American Economic Review, 100*(3), 641–672. https://doi.org/10.1257/aer.100.3.641
 
-10. Rossello, N. B., Simonofski, A., & Castiaux, A. (2025). Artificial intelligence for digital citizen participation: Design principles for a collective intelligence architecture. *Government Information Quarterly, 42*(2), 102020. https://doi.org/10.1016/j.giq.2025.102020
+10. Bono Rossello, N., Simonofski, A., & Castiaux, A. (2025). Artificial intelligence for digital citizen participation: Design principles for a collective intelligence architecture. *Government Information Quarterly, 42*(2), 102020. https://doi.org/10.1016/j.giq.2025.102020
 
 11. Rudin, C. (2019). Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead. *Nature Machine Intelligence, 1*, 206–215. https://doi.org/10.1038/s42256-019-0048-x
 
