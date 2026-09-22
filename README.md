@@ -18,6 +18,17 @@ TLA proposes a socio-technical architecture in which AI does not replace public 
 
 **PROBLEM → UNCERTAINTY → MICRO-EXPERIMENT → LEARNING → CAPABILITY → REPRODUCIBLE SOLUTION → VALUE**
 
+```mermaid
+flowchart LR
+    P[PROBLEM] --> U[UNCERTAINTY]
+    U --> E[MICRO-EXPERIMENT]
+    E --> L[LEARNING]
+    L --> C[CAPABILITY]
+    C --> R[REPRODUCIBLE SOLUTION]
+    R --> V[VALUE]
+    V -. New problems and learning .-> P
+```
+
 Rather than moving directly from a problem to a large-scale solution, TLA makes uncertainty explicit and uses bounded experiments to progressively build reliable knowledge and operational capability.
 
 ## Core design principles
