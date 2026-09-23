@@ -1,141 +1,100 @@
 # TLA — Territorial Learning Architecture
 
-### An open architecture for AI-augmented territorial learning and problem solving
+### An open research architecture for AI-assisted territorial learning
 
-> **TLA turns AI from a tool that gives answers into a system that helps territories learn.**
+> **A learning territory should know what it has already learned, recognize what it does not know, choose how to learn it, and reuse experience without erasing contextual differences.**
 
-## What is TLA?
+TLA is a socio-technical architecture for AI-assisted territorial governance and problem solving. It originated in the *Martinique Territoire Intelligent* work and is now proposed as an open research architecture that can be discussed, implemented and tested in other contexts.
 
-Most public-sector AI systems are designed to answer questions, automate tasks, predict outcomes, or optimize specific processes.
+TLA is organized around two design patterns:
 
-TLA addresses a different question:
+- **AER — Adaptive Evidence Routing:** determine how much additional evidence a decision actually needs, then route the problem toward the least costly reliable source of that evidence.
+- **CAER — Context-Aware Experience Reuse:** reuse past experience only after examining contextual differences that may alter its outcome; choose among **Reuse**, **Adapt**, and **Re-experiment**.
 
-**How can a territory systematically learn from artificial intelligence, human expertise and controlled experimentation in order to solve complex problems?**
+## Core architecture
 
-TLA proposes a socio-technical architecture in which AI does not replace public decision-making. Instead, it helps institutions identify uncertainty, generate and test hypotheses, mobilize distributed expertise, preserve decision provenance, and transform successful learning into reusable territorial capabilities.
-
-## The core learning cycle
-
-**PROBLEM → UNCERTAINTY → MICRO-EXPERIMENT → LEARNING → CAPABILITY → REPRODUCIBLE SOLUTION → VALUE**
-
-```mermaid
+\`\`\`mermaid
 flowchart LR
-    P[PROBLEM] --> U[UNCERTAINTY]
-    U --> E[MICRO-EXPERIMENT]
-    E --> L[LEARNING]
-    L --> C[CAPABILITY]
-    C --> R[REPRODUCIBLE SOLUTION]
-    R --> V[VALUE]
-    V -. New problems and learning .-> P
-```
+    P[Territorial problem / decision] --> AER[AER: What evidence is still missing?]
+    AER --> E[Evidence Memory]
+    AER --> K[Compiled Knowledge]
+    AER --> H[Human Expertise]
+    AER --> R[Tool-assisted Reasoning]
+    AER --> X{Comparable experience?}
+    X -->|Yes| CAER[CAER]
+    CAER --> U[Reuse]
+    CAER --> A[Adapt]
+    CAER --> RE[Re-experiment]
+    AER --> M[Micro-experiment]
+    E --> D[Decision / public action]
+    K --> D
+    H --> D
+    R --> D
+    U --> D
+    A --> D
+    RE --> M
+    M --> D
+    D -->|Observed outcome| EM[Experiential Memory]
+\`\`\`
 
-Rather than moving directly from a problem to a large-scale solution, TLA makes uncertainty explicit and uses bounded experiments to progressively build reliable knowledge and operational capability.
+## Three complementary memories
 
-## Core design principles
+| Memory | Main question | Typical implementation |
+|---|---|---|
+| **Evidence Memory** | What do the sources say? | RAG, search, documentary repository |
+| **Compiled Knowledge Memory** | What do we currently know? | Wiki, GraphRAG, knowledge graph, structured synthesis |
+| **Experiential Memory** | What have we actually tried? | Structured experience records |
 
-1. **Problem-first orientation**  
-   AI activity begins with a territorial problem, not with a technology or dataset.
+**Safety principle:** no important compiled knowledge without a recoverable path back to evidence.
 
-2. **Explicit uncertainty**  
-   Unknowns, competing hypotheses and insufficient evidence are represented explicitly.
+## What TLA claims — and what it does not
 
-3. **Bounded experimentation**  
-   Critical uncertainties are addressed through limited, measurable and, where possible, reversible micro-experiments.
+TLA proposes design rules and an architecture. It does **not** currently claim that AER is an optimal metareasoning algorithm, that CAER automatically establishes causal transportability, or that any one memory technology is universally superior.
 
-4. **Human decision authority**  
-   Humans retain authority over objectives, acceptable risks, experiment authorization and scaling decisions.
-
-5. **Provenance by design**  
-   Sources, assumptions, AI systems, human interventions and experimental outcomes remain auditable.
-
-6. **Distributed expertise**  
-   AI helps decompose complex problems and mobilize relevant expertise through bounded tasks and micro-missions.
-
-7. **Capability accumulation**  
-   Successful learning is converted into reusable territorial capabilities rather than remaining isolated project knowledge.
-
-## Architecture
-
-TLA is the general architecture.
-
-```mermaid
-flowchart TB
-    P[Territorial problem] --> T[TLA orchestration]
-
-    H[Human and institutional governance] --> T
-    A[AI and knowledge layer] --> T
-
-    T --> L[LTAA<br/>Learning and experimentation]
-    T --> M[MIN<br/>Distributed expertise and micro-missions]
-
-    M --> L
-    L --> C[Capability memory<br/>Provenance, outcomes, reusable assets]
-    C --> T
-
-    L --> R[Reproducible solution]
-    R --> V[Territorial value]
-    V -. feedback and new problems .-> P
-```
-
-Its initial implementation framework includes two complementary mechanisms:
-
-- **LTAA** — the operational learning and experimentation mechanism;
-- **MIN** — the mechanism for mobilizing distributed expertise through structured micro-missions.
-
-Artificial intelligence provides retrieval, synthesis, hypothesis generation, modelling, simulation, monitoring and coordination capabilities.
-
-Human institutions retain responsibility for objectives, public values, acceptable risk and legitimate decision-making.
-
-Detailed architecture: [architecture/tla-overview.md](architecture/tla-overview.md)
-
-## Repository map
-
-- [Architecture](architecture/tla-overview.md)
-- [Core design principles](framework/core-principles.md)
-- [Decision provenance](framework/decision-provenance.md)
-- [Evaluation framework](evaluation/evaluation-framework.md)
-- [Illustrative Martinique blue-economy case](examples/martinique-blue-economy.md)
-- [Research paper workspace](paper/README.md)
-- [Contribution guidelines](CONTRIBUTING.md)
-- [Pre-publication checklist](RELEASE_CHECKLIST.md)
-
-## Initial design context
-
-TLA emerged from research on the use of artificial intelligence to support the long-term development and problem-solving capacity of **Martinique**, a French Caribbean island territory.
-
-Martinique is used as the initial design context, but TLA is intended as a general architecture that can be explored in municipalities, regions, islands and other territorial systems.
+The purpose of this repository is to make the architecture explicit enough to be criticized, implemented in different ways, and tested.
 
 ## Research paper
 
-A technical paper describing the architecture, its theoretical foundations, design principles, evaluation framework and initial application case is currently in preparation.
+The complete English paper is available in Markdown:
 
-**Working title:**
+- [TLA — Territorial Learning Architecture](docs/TLA.md)
 
-*“TLA: A Territorial Learning Architecture for AI-Augmented Problem Solving — From Model-Centric AI to Cumulative Territorial Learning”*
+Focused documents:
 
-## Status
+- [Adaptive Evidence Routing (AER)](docs/AER.md)
+- [Context-Aware Experience Reuse (CAER)](docs/CAER.md)
+- [The three memories](docs/memories.md)
+- [Governance and drift control](docs/governance.md)
+- [Open research questions](research/open_questions.md)
 
-**TLA is currently a research and design framework.**
+## Initial design context
 
-The architecture has not yet been validated through full-scale territorial deployment.
+TLA emerged from the proposal for a **learning territory capable of learning how to learn in Martinique**, developed in:
 
-The objective of this repository is to document the framework openly, make its assumptions testable, and enable researchers and practitioners to discuss, challenge, experiment with and extend the architecture.
+**Tanic, É. (2026). _Martinique Territoire Intelligent_. Independently published. ISBN 979-8175326957. ASIN B0HKGKGFGD.**
 
-## Open research
+https://www.amazon.fr/dp/B0HKGKGFGD
 
-Future work will focus on:
+Martinique is the initial design context, not the boundary of the architecture.
 
-- formalizing the TLA architecture;
-- developing its decision-provenance model;
-- defining metrics for uncertainty reduction and capability accumulation;
-- implementing initial proof-of-concept workflows;
-- testing TLA on concrete territorial problems;
-- comparing TLA with conventional AI-assisted decision processes.
+## Contributing
+
+Criticism, alternative formulations, reference implementations, case studies and proposals for evaluating AER or CAER are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Open questions are tracked as GitHub Issues.
 
 ## Citation
 
-Citation information and a DOI will be added with the first public release.
+A machine-readable citation is provided in [CITATION.cff](CITATION.cff).
+
+Suggested citation:
+
+> Tanic, É. (2026). *TLA — Territorial Learning Architecture: An AI-Assisted Learning Architecture for Territories*. Open research architecture.
 
 ## License
 
-License information will be added before the repository becomes public.
+Text, diagrams and documentation are released under **Creative Commons Attribution 4.0 International (CC BY 4.0)**. See [LICENSE](LICENSE).
+
+---
+
+**Status:** open research architecture. The design patterns are proposed for discussion and testing; their performance is not presented as already demonstrated.
