@@ -6,7 +6,7 @@
 
 **Émile TANIC**
 
-English open research release — September 2026  
+English version - September 2026  
 Open research architecture / position paper intended for GitHub
 
 ## Abstract
