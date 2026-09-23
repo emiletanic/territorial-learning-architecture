@@ -1,30 +1,22 @@
 # TLA research paper
 
-## Working title
+The current English open research paper is maintained here:
 
-**TLA: A Territorial Learning Architecture for AI-Augmented Problem Solving — From Model-Centric AI to Cumulative Territorial Learning**
+**[docs/TLA.md](../docs/TLA.md)**
 
-## Publication status
+Working title:
 
-The manuscript is in preparation and is not yet the final public version.
+**TLA — Territorial Learning Architecture: An AI-Assisted Learning Architecture for Territories**
 
-The planned public release will include:
+The paper presents TLA as an open research architecture centered on:
 
-- the final English-language paper;
-- a stable PDF version;
-- a citation file;
-- the architecture diagrams;
-- a versioned GitHub release;
-- DOI metadata when the first public release is archived.
+- **Adaptive Evidence Routing (AER)**
+- **Context-Aware Experience Reuse (CAER)**
+- three complementary organizational memories
+- governance and anti-drift rules
+- a minimal experience record
+- an open research agenda
 
-## Scientific status
+The design patterns are proposed for discussion, implementation and testing. Their performance is not presented as already demonstrated.
 
-The first paper presents TLA as a **conceptual and architectural research framework**.
-
-It does not claim full-scale empirical validation.
-
-Its contribution is architectural rather than algorithmic: TLA specifies how AI systems, human expertise, institutional authority, explicit uncertainty, bounded experimentation, provenance and capability memory can be organized into a cumulative territorial learning system.
-
-## Validation plan
-
-The manuscript defines falsifiable propositions and an evaluation protocol for later proof-of-concept and field studies.
+The \`paper/\` directory contains earlier working material and references. The public reference text is \`docs/TLA.md\`.
