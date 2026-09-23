@@ -1,5 +1,7 @@
 # TLA — Territorial Learning Architecture
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22923636.svg)](https://doi.org/10.5281/zenodo.22923636)
+
 ### An open research architecture for AI-assisted territorial learning
 
 > **A learning territory should know what it has already learned, recognize what it does not know, choose how to learn it, and reuse experience without erasing contextual differences.**
@@ -89,7 +91,7 @@ A machine-readable citation is provided in [CITATION.cff](CITATION.cff).
 
 Suggested citation:
 
-> Tanic, É. (2026). *TLA — Territorial Learning Architecture: An AI-Assisted Learning Architecture for Territories*. Open research architecture.
+> Tanic, É. (2026). *TLA — Territorial Learning Architecture: An AI-Assisted Learning Architecture for Territories*. Open research architecture. https://doi.org/10.5281/zenodo.22923636
 
 ## License
 
