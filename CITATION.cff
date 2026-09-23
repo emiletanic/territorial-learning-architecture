@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use TLA, please cite this work."
+title: "TLA — Territorial Learning Architecture: An AI-Assisted Learning Architecture for Territories"
+type: article
+authors:
+  - family-names: Tanic
+    given-names: Émile
+version: 0.1.0
+date-released: 2026-09-23
+license: CC-BY-4.0
+repository-code: "https://github.com/emiletanic/territorial-learning-architecture"
+abstract: "TLA is an open research architecture for AI-assisted territorial learning, centered on Adaptive Evidence Routing (AER), Context-Aware Experience Reuse (CAER), and three complementary organizational memories."
+keywords:
+  - artificial intelligence
+  - territorial governance
+  - Adaptive Evidence Routing
+  - Context-Aware Experience Reuse
+  - experiential memory
+  - RAG
+  - organizational learning
