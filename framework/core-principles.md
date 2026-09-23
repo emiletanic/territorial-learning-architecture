@@ -1,31 +1,12 @@
 # TLA core design principles
 
-TLA is built around seven design principles.
-
-## D1 — Problem-first orientation
-
-The starting point is a territorial problem, not a model, dataset or technology. AI is selected only after the problem has been decomposed and the relevant decision context is understood.
-
-## D2 — Explicit uncertainty
-
-TLA records what is unknown, contested or insufficiently evidenced. It distinguishes, at minimum, data uncertainty, model uncertainty, behavioural uncertainty, implementation uncertainty and value uncertainty.
-
-## D3 — Bounded experimentation
-
-When a decision-critical uncertainty cannot be resolved from existing evidence, TLA seeks the smallest legitimate experiment capable of producing useful information. Experiments should be limited, measurable and reversible where possible.
-
-## D4 — Human decision authority
-
-AI may recommend, compare, simulate and coordinate. Public objectives, acceptable risk, authorization and scaling remain human responsibilities.
-
-## D5 — Provenance by design
-
-Important claims and recommendations should remain traceable to their sources, assumptions, model versions, prompts or configurations where relevant, human interventions, experiment records and observed outcomes.
-
-## D6 — Distributed expertise
-
-Complex problems are decomposed into bounded knowledge tasks that can be routed to internal specialists, external experts, universities, firms, associations or diaspora networks. AI assists with task decomposition, matching and synthesis.
-
-## D7 — Capability accumulation
-
-The output of a learning cycle is not only an answer. Validated learning should become a reusable territorial capability. Over time, the territory should improve not only its models but its capacity to formulate, test and solve problems.
+1. **Evidence proportionality** — do not mobilize more search, computation, expertise or experimentation than a decision requires.
+2. **Context before reuse** — semantic similarity alone is not sufficient evidence of transferability.
+3. **Return to evidence** — important compiled knowledge must retain a recoverable path to original evidence.
+4. **Experience as a first-class memory object** — preserve what was tried, where, under which conditions, and with what outcome.
+5. **Explicit uncertainty** — distinguish what is known from what is hypothesized, contested or still unknown.
+6. **Adaptive human authority** — human involvement increases with risk, irreversibility, normative content and institutional significance.
+7. **Traceability over false transparency** — reconstruct the decision process even when a model's internal mechanics are not fully interpretable.
+8. **Negative results matter** — failed or null experiments can prevent repeated waste.
+9. **Cold start is normal** — begin with evidence and progressively build compiled and experiential memory.
+10. **Open implementation** — AER and CAER are design patterns, not mandatory single algorithms.
