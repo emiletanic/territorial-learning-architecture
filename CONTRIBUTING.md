@@ -1,40 +1,63 @@
 # Contributing to TLA
 
-TLA is intended to be an open research and design project.
+TLA is an open research project. Contributions are welcome from researchers, public-sector practitioners, AI engineers, domain experts and territorial actors.
 
-Contributions are welcome from researchers, public-sector practitioners, AI engineers, domain experts and territorial actors.
+## Ways to contribute
 
-## Useful contributions
+Useful contributions include:
 
-Particularly useful contributions include:
+- critiques of AER or CAER;
+- alternative routing policies;
+- contextual-reuse methods;
+- implementations using agent frameworks or other orchestration tools;
+- memory architectures;
+- experience-record schemas;
+- territorial case studies;
+- evaluation protocols;
+- governance, legal or ethical analyses;
+- references to closely related work.
 
-- critiques of the architecture or its assumptions;
-- references to related research;
-- alternative formalizations of uncertainty or capability accumulation;
-- proposals for evaluation metrics;
-- reproducible proof-of-concept workflows;
-- documented territorial case studies;
-- improvements to decision-provenance mechanisms;
-- legal, ethical or institutional analyses;
-- implementation examples for LTAA- or MIN-like mechanisms.
+## Start with an Issue
+
+For substantial proposals, open an Issue first. Describe:
+
+1. the problem;
+2. the proposed contribution;
+3. why it matters;
+4. supporting evidence or references;
+5. limitations and trade-offs.
+
+## Pull requests
+
+For a pull request:
+
+1. Fork the repository.
+2. Create a focused branch.
+3. Keep the change limited to one coherent contribution.
+4. Use clear Markdown and preserve source citations.
+5. Explain what changed and why.
+6. Do not present simulated or AI-generated outcomes as field evidence.
 
 ## Scientific discipline
 
-Please distinguish clearly between:
+Please distinguish between:
 
-- **conceptual claims**;
-- **illustrative examples**;
-- **hypotheses to be tested**; and
-- **empirically validated results**.
+- established evidence;
+- interpretation;
+- hypothesis;
+- design proposal;
+- empirical validation.
 
-Do not present simulated or AI-generated results as field evidence.
+Negative and null results are welcome.
 
-## How to contribute
+## Language
 
-Once the repository is public, contributions may be proposed through GitHub Issues or Pull Requests.
+English is the primary language of the public repository. French material may be included when it documents the Martinique design context.
 
-For substantial changes, open an Issue first to describe the problem, proposed contribution and supporting evidence.
+## AI-assisted contributions
+
+AI tools may be used, but contributors remain responsible for accuracy, citations, legal compliance and disclosure when AI use is material to the contribution.
 
 ## Conduct
 
-Contributions should be technically and scientifically critical while remaining focused on claims, evidence and design choices rather than individuals.
+See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
