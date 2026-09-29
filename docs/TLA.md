@@ -39,6 +39,8 @@ TLA does **not** currently claim that AER is an optimal metareasoning algorithm,
 
 The building blocks used by TLA have established antecedents: case-based reasoning, value of information, metareasoning, RAG, graphs and compiled Wikis, provenance, and causal transportability. TLA's proposal concerns their orchestration in a territorial learning system, through two design patterns simple enough to be understood, criticized, and tested independently.
 
+TLA also sits within the established tradition of **territorial intelligence**. Recent theoretical synthesis work describes territorial intelligence as a participatory and collaborative process that combines information, knowledge, technology and stakeholder coordination to support territorial development, and explicitly links it to collective learning and the construction of territorial capabilities (Ouassou & Bakour, 2024). TLA therefore does not claim novelty for the ideas of territorial learning, stakeholder participation, knowledge sharing or collective capability-building themselves; its proposed contribution lies in the AI-oriented orchestration mechanisms introduced here — especially AER, CAER, and the explicit separation of evidence, compiled knowledge and experiential memory.
+
 > **Framing principle:** propose clear and falsifiable mechanisms without presenting their performance as already demonstrated.
 
 ## 3. General architecture
@@ -304,6 +306,8 @@ Ming, H., Li, F., Wu, X., & Que, W. (2026). Retrieval as Reasoning: Self-Evolvin
 Okonjo, J. (2026). Adapting regulatory sandboxes as experimentalist governance frameworks for public sector artificial intelligence experimentation. *Global Public Policy and Governance, 6*, 259-281. https://doi.org/10.1007/s43508-026-00147-x.
 
 OECD (2026). *Digital Government Outlook 2026: From Foundations to Transformational Impact*. OECD Publishing. https://doi.org/10.1787/0496b2bc-en.
+
+Ouassou, S., & Bakour, C. (2024). Intelligence territoriale : État de l’art théorique. *International Journal of Accounting, Finance, Auditing, Management and Economics, 5*(4), 597-613. https://doi.org/10.5281/zenodo.11077367.
 
 Sigfrids, A., Leikas, J., Salo-Pöntinen, H., & Koskimies, E. (2023). Human-centricity in AI governance: A systemic approach. *Frontiers in Artificial Intelligence, 6*, 976887. https://doi.org/10.3389/frai.2023.976887.
 
